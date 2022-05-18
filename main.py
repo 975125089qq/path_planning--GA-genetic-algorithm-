@@ -1,4 +1,4 @@
-# genetic algorithm search of the one max optimization problem
+# use genetic algorithm to do path planning
 import pandas as pd
 from numpy.random import randint
 from evaluation import evaluation
@@ -69,7 +69,6 @@ if not len(new_pop):
 
 # iterations
 best, score = genetic_algorithm(evaluation, n_iter, p_cross, p_mut, map, new_pop)
-print("what has happened")
 plt_map(map, best)
 print('Done!')
 print('f(%s) = %f' % (best, score))
