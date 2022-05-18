@@ -2,7 +2,8 @@
 Use genetic algorithm to do path planning  
 
 The map is generated randomly.The map size can be customized.
-The blue color means obstacles that should be avoided.  This program is not that perfect, but works well most of the time.
+The blue color means obstacles that should be avoided.    
+This program is not that perfect, but works well most of the time.
 
 The result is as below.
 
