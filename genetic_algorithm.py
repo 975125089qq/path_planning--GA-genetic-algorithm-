@@ -86,7 +86,7 @@ def genetic_algorithm(evaluation, n_iter, p_cross, p_mut, map, new_pop):
     # enumerate generations
     for gen in range(n_iter):
         # evaluate all candidates in the population
-        scores = [evaluation(c, map_size) for c in new_pop]
+        scores = np.array([evaluation(c, map_size) for c in new_pop])
         # check for new best solution
         for i in range(len(new_pop)):
             if scores[i] < best_score:
