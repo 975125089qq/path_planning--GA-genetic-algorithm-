@@ -7,6 +7,7 @@ import numpy as np
 # Roulette Wheel Selection
 def selection(pop, scores):
     # create a roulette wheel
+    scores = 1 / scores
     sum_score = sum(scores)
     p_score = scores / sum_score
     p_score = np.cumsum(p_score)
